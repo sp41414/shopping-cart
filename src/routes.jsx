@@ -1,9 +1,11 @@
 import App from "./App.jsx"
+import ErrorPage from "./components/pages/ErrorPage.jsx"
 
 const routes = [
 	{
 		path: "/",
-		element: <App />
+		element: <App />,
+		errorElement: <ErrorPage />
 	},
 ]
 
