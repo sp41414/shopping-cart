@@ -20,7 +20,7 @@ const AppRoutes = () => {
         },
         {
             path: "cart",
-            elemnt: <CartPage cartItems={cartItems} />
+            element: <CartPage cartItems={cartItems} setCartItems={setCartItems} />
         }
     ])
 

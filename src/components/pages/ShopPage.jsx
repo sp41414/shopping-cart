@@ -3,7 +3,7 @@ import NavBar from "../NavBar"
 
 const ShopPage = ({ cartItems, setCartItems }) => {
     const handleCartUpdate = (item) => {
-        setCartItems((prevArray) => [...prevArray, { name: item.name, price: item.price }])
+        setCartItems((prevArray) => [...prevArray, { name: item.name, price: item.price, quantity: item.quantity, key: Date.now() + Math.random() }])
     }
 
     return (

@@ -15,7 +15,7 @@ const ItemCard = ({ name = "Banana", price = "3", handleCartUpdate }) => {
             <input type="number" onChange={handleQuantityChange} value={itemQuantity} placeholder="Item Quantity" />
             <p>Price: {itemPrice}$</p>
 
-            <button type="button" onClick={() => handleCartUpdate({ name, price })}>Add To Cart</button>
+            <button type="button" onClick={() => handleCartUpdate({ name, price, itemQuantity })}>Add To Cart</button>
         </div>
     )
 }
