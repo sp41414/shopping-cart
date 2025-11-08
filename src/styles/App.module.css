@@ -1,0 +1,57 @@
+.container {
+	background-color: oklch(20.8% 0.042 265.755);
+	color: white;
+	padding: 1rem;
+}
+
+.button {
+	padding: .75rem .5rem;
+	background-color: oklch(48.8% 0.243 264.376);
+	transition: all .5s;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: oklch(42.4% 0.199 265.638);
+	transform: scale(1.2);
+}
+
+.link {
+	display: inline-block;
+	font-weight: 600;
+	text-decoration: inherit;
+	color: white;
+}
+
+.textContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.headerContainer,
+.linkContainer {
+	min-width: 200px;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.linkContainer * {
+	font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+	.textContainer {
+		flex-direction: column;
+	}
+
+	.headerContainer,
+	.linkContainer {
+		min-width: 0px;
+		min-height: 0px;
+	}
+}
