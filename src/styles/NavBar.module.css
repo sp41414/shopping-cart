@@ -49,4 +49,16 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	.link {
+		transition: none;
+	}
+
+	.link:hover::after {
+		width: 0%;
+	}
+
+	.link:hover {
+		transform: scale(1)
+	}
 }
